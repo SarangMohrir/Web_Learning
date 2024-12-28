@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+        .card {
+          background-color: rgb(2, 69, 86);
+          border-radius: 20px;
+          width: 300px;
+          padding: 30px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input{
+            margin-bottom: 15px;
+            border-radius: 5px;
+            padding: 10px;
+            border: 1px solid #1a1a1a;
+            background-color: white;
+        }
+        button{
+            background-color: rgb(247, 91, 91);
+            border-radius: 10px;
+            padding: 10px;
+        }
+        button:hover{
+            background-color: rgb(176, 42, 49);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Sign Up</h2>
+        <form action="submit">
+        <input type="text" placeholder="name">
+        <input type="password" placeholder="password">
+        <input type="email" placeholder="email">
+        <button>SignUp</button>
+    </form>
+</div>
+</body>
+</html>

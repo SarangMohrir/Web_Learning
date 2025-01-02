@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+        .nav1 {
+            text-decoration: none;
+            list-style: none;
+            background-color: rgb(5, 5, 7);
+            padding: 10px;
+        }
+        .nav1 ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex; 
+            justify-content: space-around;
+        }
+        .nav1 ul .dropdown-content{
+            display: none;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+            background-color: black;
+            padding: 10px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav1">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+            <a href="#">Movies</a>
+            <ul class="dropdown-content">
+            <li><a href = "#">Trending</a></li>
+            <li><a href="#">Most Boring</a></li>
+            </ul>
+    </li>
+        <li><a href="#">About</a></li>
+    </ul>
+</nav>
+    
+</body>
+</html>

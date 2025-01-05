@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Landing Page</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #b977f6, #4169e1);
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100%;
+            display: flex; /* Added for full-page centering */
+            justify-content: center; /* Added for horizontal centering */
+            align-items: center; /* Added for vertical centering */
+        }
+
+        .container {
+            display: flex;
+            justify-content: center; /* Added */
+            align-items: center; /* Added */
+            min-height: 100vh; /* Changed for full-page height */
+            width: 100%; /* Added for consistent layout */
+            padding: 20px; /* Added for spacing */
+        }
+
+        .content {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9); /* Changed to add transparency */
+            border-radius: 10px;
+            padding: 20px; /* Added for spacing */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added for modern look */
+            max-width: 400px; /* Added for consistent size */
+            width: 100%; /* Added */
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 2em; /* Changed font size for better look */
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 1em; /* Added for uniform styling */
+            line-height: 1.5; /* Added for readability */
+        }
+
+        form {
+            display: flex; /* Changed to align form elements */
+            flex-direction: column; /* Added to stack elements vertically */
+            align-items: center; /* Added to center form elements */
+        }
+
+        input[type="email"] {
+            padding: 10px; /* Added for better input styling */
+            width: 100%; /* Added to make input responsive */
+            margin-bottom: 10px; /* Added spacing between input and button */
+            border: 1px solid #ccc; /* Added border styling */
+            border-radius: 5px; /* Added border radius for rounded edges */
+            font-size: 1em; /* Added for uniform font size */
+        }
+
+        button {
+            background-color: #4169e1; /* Added consistent background color */
+            color: white;
+            padding: 10px 20px; /* Adjusted padding for better button size */
+            border: none; /* Added for cleaner look */
+            border-radius: 5px; /* Added rounded corners */
+            font-size: 1em; /* Added for consistent font size */
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Added for hover effect */
+        }
+
+        button:hover {
+            background-color: #354cad; /* Added darker color for hover */
+        }
+
+        @media (max-width: 480px) { /* Added for responsiveness */
+            .content {
+                padding: 15px; /* Adjusted padding for smaller screens */
+            }
+
+            h1 {
+                font-size: 1.5em; /* Adjusted font size for smaller screens */
+            }
+
+            p {
+                font-size: 0.9em; /* Adjusted font size */
+            }
+
+            input[type="email"], button {
+                font-size: 0.9em; /* Adjusted font size for smaller devices */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Coming Soon</h1>
+            <p>We're working hard to bring something amazing. Stay tuned!</p>
+            <form id="notify-form">
+                <input type="email" placeholder="Enter your Email" required />
+                <button type="submit">Notify Me</button> <!-- Added type="submit" -->
+            </form>
+        </div>
+    </div>
+</body>
+</html>
